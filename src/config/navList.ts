@@ -1,6 +1,6 @@
-import { NavConf } from "./ts-types";
+import { MenuItem,SubMenuItem } from '../config/ts-types'
 
-const navList: Array<NavConf> = [
+const navList:Array<MenuItem<SubMenuItem>> = [
   {
     icon: "home",
     title: "文章列表",
@@ -14,7 +14,13 @@ const navList: Array<NavConf> = [
   {
     icon: "folder",
     title: "评论管理",
-    link: "/comments"
+    link: "/comments",
+    subs: [
+        {
+            title: "留言板",
+            link: "/bordcard"
+        }
+    ]
   },
   {
     icon: "user",

@@ -13,7 +13,7 @@ class WebLayout  extends React.Component {
             <Layout>
                 <HeaderWrapper></HeaderWrapper>
                 <Layout>
-                    <Sider>
+                    <Sider width={230} className="sidebar-left">
                         <MenuList></MenuList>
                     </Sider>
                     <Content>

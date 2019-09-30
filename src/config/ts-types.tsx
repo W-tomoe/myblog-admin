@@ -6,9 +6,14 @@ export interface RouterConfig  {
 }
 
 
-export interface NavConf  {
+export interface MenuItem<T>  {
     icon: string,
     title: string,
     link: string,
-    subs?: any
+    subs?: Array<T>
+}
+
+export interface SubMenuItem {
+    title: string,
+    link: string
 }

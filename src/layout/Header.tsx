@@ -29,10 +29,8 @@ class HeaderWrapper extends React.Component<Props, State>{
         return (
             <Header className="header" style={{ background: '#fff', padding: 0 }}>
                 <Logo></Logo>
-                
                 {this.state.isFlod?
                     <Icon type="menu-unfold"/>:<Icon type="menu-fold"/>}
-                
             </Header>
         )
     }
