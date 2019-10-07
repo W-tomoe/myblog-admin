@@ -15,7 +15,7 @@ const navList:Array<MenuItem<SubMenuItem>> = [
     icon: "folder",
     title: "评论管理",
     link: "/comments",
-    subs: [
+    children: [
         {
             title: "留言板",
             link: "/bordcard"

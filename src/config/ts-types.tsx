@@ -10,7 +10,7 @@ export interface MenuItem<T>  {
     icon: string,
     title: string,
     link: string,
-    subs?: Array<T>
+    children?: Array<T>
 }
 
 export interface SubMenuItem {
