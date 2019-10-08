@@ -1,23 +1,22 @@
-import React, { Component } from 'react';
-import { Layout } from 'antd'
+import React from 'react';
 
-const { Footer } = Layout 
-
-export interface FooterProps {
+export interface HomeProps {
     
 }
  
-export interface FooterState {
+export interface HomeState {
     
 }
  
-class FooterWrapper extends React.Component<FooterProps, FooterState> {
+class Home extends React.Component<HomeProps, HomeState> {
     state = { }
     render() { 
         return ( 
-            <Footer></Footer>
+            <div className='content-main'>
+                
+            </div>
         );
     }
 }
  
-export default FooterWrapper;
+export default Home;

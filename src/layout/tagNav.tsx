@@ -1,23 +1,41 @@
-import React, { Component } from 'react';
-import { Layout } from 'antd'
+import React from 'react';
+import { TagList } from '../config/ts-types'
+import { log } from 'util';
+import { Link } from 'react-router-dom'
+import { Icon } from 'antd'
+import { withRouter,RouteComponentProps } from 'react-router-dom'
 
-const { Footer } = Layout 
 
-export interface FooterProps {
+export interface TagNavProps  extends RouteComponentProps{
+    tagList: Array<TagList>
+}
+ 
+export interface TagNavState {
     
 }
  
-export interface FooterState {
+class TagNav extends React.Component<TagNavProps, TagNavState> {
+    constructor(props: TagNavProps) {
+        super(props)
+    }
+
+    componentDidMount() {
+        console.log(this.props,'props')
+    }
     
-}
- 
-class FooterWrapper extends React.Component<FooterProps, FooterState> {
-    state = { }
-    render() { 
-        return ( 
-            <Footer></Footer>
+    render() {
+        return (
+            <div  className='topbar'>
+                <Link to='/' className='topbar-item'>
+                    <Icon type="home" className="topbar-item__icon"/>
+                </Link>
+
+                <Link to='/list' className='topbar-item'>
+                    文章列表
+                </Link>
+            </div>
         );
     }
 }
  
-export default FooterWrapper;
+export default withRouter(TagNav);

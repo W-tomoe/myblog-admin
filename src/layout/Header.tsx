@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Component } from 'react';
 import { Layout, Icon } from 'antd'
 
 import Logo from '../components/logo'
@@ -30,7 +29,7 @@ class HeaderWrapper extends React.Component<Props, State>{
             <Header className="header" style={{ background: '#fff', padding: 0 }}>
                 <Logo></Logo>
                 {this.state.isFlod?
-                    <Icon type="menu-unfold"/>:<Icon type="menu-fold"/>}
+                <Icon type="menu-unfold"/>:<Icon type="menu-fold"/>}
             </Header>
         )
     }

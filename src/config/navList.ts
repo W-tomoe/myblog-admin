@@ -3,8 +3,20 @@ import { MenuItem,SubMenuItem } from '../config/ts-types'
 const navList:Array<MenuItem<SubMenuItem>> = [
   {
     icon: "home",
-    title: "文章列表",
-    link: "/"
+    title: "文章管理",
+    link: '/actical',
+    children: [
+        {
+            link: "/list",
+            title: "文章列表",
+            parent: '/actical'
+        },
+        {
+            link: "/createArticle",
+            title: "新建文章",
+            parent: '/comments'
+        }
+    ]
   },
   {
     icon: "edit",
@@ -13,19 +25,20 @@ const navList:Array<MenuItem<SubMenuItem>> = [
   },
   {
     icon: "folder",
-    title: "评论管理",
-    link: "/comments",
-    subs: [
-        {
-            title: "留言板",
-            link: "/bordcard"
-        }
-    ]
+    title: "留言板",
+    link: "/comments"
   },
   {
     icon: "user",
     title: "系统设置",
-    link: "/setting"
+    link: "/setting",
+    children: [
+        {
+            title: "账号管理",
+            link: "/userManage",
+            parent: '/setting'
+        }
+    ]
   }
 ];
 
