@@ -65,17 +65,12 @@ class MenuList extends React.Component<MenuListProps,MenuListState> {
 
     public render() {
         return (
-<<<<<<< HEAD
             <Menu selectedKeys={this.getSelectedMenuKeys()}
               multiple={false}  
               mode='inline' 
               theme='dark'  
               className='menu-nav'>
                 {this.renderMenu(navList)}
-=======
-            <Menu  multiple={false} mode='inline' theme='dark'  className='menu-nav'>
-                {renderMenu(navList)}
->>>>>>> refs/remotes/origin/master
             </Menu>
         );
     }

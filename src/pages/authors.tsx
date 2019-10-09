@@ -11,7 +11,7 @@ export interface AuthorState {
 class Author extends React.Component<AuthorProps, AuthorState> {
     state = { }
     render() { 
-        return ( 
+        return (
             <div className='content-main'>这是作者页面</div>
         );
     }

@@ -32,6 +32,7 @@ class TagNav extends React.Component<TagNavProps, TagNavState> {
 
                 <Link to='/list' className='topbar-item'>
                     文章列表
+                    <Icon type="close" className="topbar-item__close"/>
                 </Link>
             </div>
         );

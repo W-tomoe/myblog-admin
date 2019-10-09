@@ -6,7 +6,7 @@ import 'moment/locale/zh-cn';
 import { ConfigProvider } from 'antd'
 import './App.css'
 import './assets/css/common.less'
-
+import './assets/css/reset.less'
 const App: React.FC = () => {
   return (
     <div className="App">

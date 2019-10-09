@@ -40,6 +40,10 @@ class List extends React.Component<ListProps, ListState> {
     });
   }
 
+  articleDetail() {
+
+  }
+
   editArticle(id: number): void {}
 
   componentDidMount() {
@@ -124,16 +128,22 @@ class List extends React.Component<ListProps, ListState> {
         render: (text: string, record: any, index: number) => (
           <span>
             <Icon
-              type="delete"
-              title="删除"
+              type="search"
+              title="详情"
               className="table-handle__icon"
-              onClick={this.deleteArticle.bind(this, index)}
+              onClick={this.articleDetail.bind(this, index)}
             />
             <Icon
               type="form"
               title="编辑"
               className="table-handle__icon"
               onClick={this.editArticle.bind(this, index)}
+            />
+            <Icon
+              type="delete"
+              title="删除"
+              className="table-handle__icon"
+              onClick={this.deleteArticle.bind(this, index)}
             />
           </span>
         )

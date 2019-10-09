@@ -1,0 +1,105 @@
+@import './vars.less';
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+a{
+    color:inherit
+}
+a:hover{
+    color:inherit
+}
+a:active{
+    color:inherit
+}
+
+
+
+/*======================
+  ====antd 样式重置 =====
+  ======================*/
+.ant-layout-sider{
+    background: @menu-bg
+}
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: rgba(0,0,0,.1);
+    box-shadow: inset 4px 0 0 0 @w-active;
+}
+
+.ant-layout-sider .ant-menu>.ant-menu-item {
+    height: 48px;
+    line-height: 48px;
+    margin: 0;  
+    color: #eee;
+}
+
+.ant-menu,.ant-menu-sub,.ant-menu-inline.ant-menu-sub,.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    font-size: 14px;
+    background: @menu-bg;
+}
+
+.ant-table-thead > tr > th{
+    font-weight: 600
+}
+
+
+/*======================
+  ====== 富文本样式 ======
+  ======================*/
+.contract-editor-wrapper{
+    display: block !important;
+}
+
+.contract-editor{
+    min-height: 500px;
+    border: 1px solid #F1F1F1 !important;
+    padding: 5px !important;
+    border-radius: 2px !important;
+}
+

@@ -12,6 +12,7 @@ import Authors from '../pages/authors'
 import Setting from '../pages/setting'
 import Comments from '../pages/comments'
 import CreateArticle from '../pages/createArticle'
+import Login from '../pages/login'
 
 const { Sider, Content } = Layout
 
@@ -42,10 +43,10 @@ class WebLayout  extends React.Component<WebLayoutProps, WebLayoutState> {
                     <Sider width={230} className="sidebar-left">
                         <MenuList></MenuList>
                     </Sider>
-                    <Content>
+                    <Content className='flex column'>
                         <TagNav tagList={[]}></TagNav>
-
                         <Route path="/" exact component={Home}/>
+                        <Route path="/login" exact component={Login}/>
                         <Route path="/list" exact component={List}/>
                         <Route path="/authors" exact component={Authors}/>
                         <Route path="/comments" exact component={Comments}/>
