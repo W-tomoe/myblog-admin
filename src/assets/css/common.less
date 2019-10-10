@@ -4,9 +4,11 @@
   =====Header 头部=====
   ====================*/
 .header {
+    position: relative;
     height: 60px;
     line-height: 60px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 2;
     .menu-fold {
         float: right;
         cursor: pointer;
@@ -115,8 +117,15 @@
     line-height: 50px;
     width: 100%;
     background: #fff;
+    border-bottom: 1px solid #e0e0e0;
     box-shadow: 0 3px 3px rgba(0,0,0,.05);
     padding:0 15px;
+    // position: absolute;
+    // top:0;
+    // left: 0;
+    // right: 0;
+    z-index: 2;
+    position: relative;
     .topbar-item{
         font-size: 14px;
         display: inline-block;
@@ -128,7 +137,7 @@
         margin-right: 10px;
         background: #f5f5f5;
         &.active{
-            background: #1890ff;
+            background: @w-active;
         }
         .topbar-item__icon{
             font-size: 16px;

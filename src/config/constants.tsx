@@ -1,5 +1,5 @@
 // api
-const API_BASE_URL:string = '';
+const API_BASE_URL:string = 'https://cx.blockchain.hyonline.online/blockchain_admin_test';
 
 
 

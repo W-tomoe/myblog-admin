@@ -1,6 +1,7 @@
 import React from 'react';
 import WebLayout from './layout/index'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import Login from './pages/login'
 import zhCN from 'antd/es/locale/zh_CN';
 import 'moment/locale/zh-cn';
 import { ConfigProvider } from 'antd'
@@ -11,9 +12,10 @@ const App: React.FC = () => {
   return (
     <div className="App">
         <ConfigProvider locale={zhCN}>
-            <BrowserRouter>
+            <Router>
                 <WebLayout></WebLayout>
-            </BrowserRouter>
+                <Route path="/login" exact component={Login}/>
+            </Router>
         </ConfigProvider>
     </div>
   );

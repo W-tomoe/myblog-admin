@@ -49,7 +49,9 @@ body{
     margin-right:10px;
 }
 
-
+.m-20{
+    margin:20px;
+}
 
 .m-b-20{
     margin-bottom:20px;
@@ -58,6 +60,45 @@ body{
 .m-t-20{
     margin-top:20px;
 }
+/*=====================
+  ==== 元素高度 ========
+  ===================== */
+.full-h{
+    height: 100%;
+}
+
+/*=====================
+  ==== 页面滚动 ========
+  ===================== */
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.overflow-y{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.overflow-x{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.router-page{
+    min-height: calc(100vh - 110px);
+    position: relative;
+    overflow: auto;
+}
+
+.scroll-page-v{
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1
+}
+
 /*================= 
   =====flex布局=====
   ================= */
